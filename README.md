@@ -1,26 +1,21 @@
-# Segmented Age–Depth Modeling of IODP Site U1516
+# U1516 Age Model
 
-This repository contains Python scripts used to construct a segmented, weighted age–depth model for IODP Site U1516 (Expedition 369, Mentelle Basin).
+Python scripts used to construct the revised Oligocene–Miocene
+age-depth model and estimate chronological uncertainties for
+IODP Site U1516, Mentelle Basin.
 
-## Overview
+## Contents
 
-The model integrates:
-- Shipboard magnetostratigraphic and biostratigraphic tie points
-- Sr-isotope stratigraphic constraints
-- Segmented weighted linear regressions
-- Monte Carlo simulations for age uncertainty estimation
+- `Sr_age_calculation.py`: converts measured seawater 87Sr/86Sr
+  ratios to numerical ages using the McArthur et al. (2025)
+  seawater Sr-isotope calibration.
 
-A weighting ratio of 100:1 (shipboard vs. Sr-isotope ages) was applied to ensure the age framework is primarily anchored to high-confidence stratigraphic tie points.
+- `U1516_age_depth_model.py`: constructs the piecewise age-depth
+  model using Sr-derived ages together with shipboard
+  biostratigraphic and magnetostratigraphic age constraints.
 
-## Methods
-
-The stratigraphic sequence is partitioned into depth segments based on:
-1. Independent stratigraphic markers
-2. Breaks in Sr-isotope trends
-
-Within each segment, a weighted least-squares regression (Age = a × Depth + b) is applied.
-
-Uncertainty propagation is performed using Monte Carlo simulations.
+- `U1516_age_uncertainty.py`: estimates age uncertainties using
+  Monte Carlo simulations.
 
 ## Dependencies
 
