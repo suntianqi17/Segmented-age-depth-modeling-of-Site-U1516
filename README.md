@@ -34,4 +34,4 @@ GEBCO 2023 bathymetry is used for regional mapping.
 
 If you use this code, please cite the associated manuscript:
 
-Sun et al. (2026), *Chemostratigraphic constraints on Oligocene–Miocene sedimentation and hiatus formation at IODP Site U1516*, Paleoceanography and Paleoclimatology.
+Sun et al. (2026), *Chemostratigraphic constraints on Oligocene–Miocene sedimentation and hiatus formation at IODP Site U1516, Mentelle Basin: implications for deep-water circulation in the eastern Indian Ocean*, Paleoceanography and Paleoclimatology.
